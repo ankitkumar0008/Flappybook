@@ -5,6 +5,7 @@ import Features from "./components/Features/Features";
 import Gallery from "./components/Gallery/Gallery";
 import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
