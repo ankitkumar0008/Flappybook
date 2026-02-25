@@ -10,7 +10,7 @@ const Header = ({ darkMode, setDarkMode }) => {
 
       <nav className="nav">
         <a href="#hero" className="nav-link">Home</a>
-        <a href="#features" className="nav-link">Highlights</a>
+        <a href="#features" className="nav-link">Features</a>
         <a href="#gallery" className="nav-link">Gallery</a>
         <a href="#cta" className="nav-link">Contact</a>
 
