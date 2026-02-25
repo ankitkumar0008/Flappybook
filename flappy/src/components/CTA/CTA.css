@@ -1,0 +1,15 @@
+.cta {
+  padding: 56px 16px;
+  text-align: center;
+  background: var(--card-bg);
+}
+
+.cta-title {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.cta-text {
+  margin: 0 0 18px;
+  color: var(--muted-text);
+}

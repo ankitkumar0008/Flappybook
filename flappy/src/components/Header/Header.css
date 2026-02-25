@@ -1,0 +1,67 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text-color);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+
+
+.brand-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 200ms ease, transform 200ms ease;
+}
+
+.nav-link:hover {
+  background: var(--section-bg);
+  transform: translateY(-1px);
+}
+
+/* TOGGLE BUTTON */
+
+.toggle-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}

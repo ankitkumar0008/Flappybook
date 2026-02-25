@@ -1,0 +1,113 @@
+/* ============================= */
+/*        THEME VARIABLES        */
+/* ============================= */
+
+:root {
+  --bg-color: #f7f7fb;
+  --text-color: #111;
+  --card-bg: #ffffff;
+  --section-bg: #f8f9ff;
+  --border-color: #e5e7eb;
+  --muted-text: #555;
+
+  --button-bg: #111;
+  --button-text: #ffffff;
+}
+
+/* DARK MODE */
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --card-bg: #1e293b;
+  --section-bg: #111827;
+  --border-color: #334155;
+  --muted-text: #cbd5e1;
+
+  --button-bg: #f1f5f9;
+  --button-text: #0f172a;
+}
+
+/* ============================= */
+/*           BASE                */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* ============================= */
+/*           BUTTONS             */
+/* ============================= */
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  margin: 5px;
+  transition: transform 200ms ease,
+              box-shadow 200ms ease,
+              background 200ms ease,
+              color 200ms ease;
+}
+
+.primary-btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.secondary-btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  opacity: 0.9;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.outline-btn {
+  border-color: var(--text-color);
+  color: var(--text-color);
+  background: transparent;
+}
+
+.outline-btn:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 520px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .feature-card,
+  .tile {
+    width: 100%;
+    max-width: 360px;
+  }
+}
